@@ -11,10 +11,10 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        
         LinearLayout layout = new LinearLayout(this);
         layout.setGravity(Gravity.CENTER);
-
+        
         Switch toggle = new Switch(this);
         toggle.setText("Enable VoiceLock ");
         layout.addView(toggle);
