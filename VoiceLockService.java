@@ -56,9 +56,9 @@ public class VoiceLockService extends AccessibilityService {
         if (!isEnabled) return;
 
         // Check if phone is busy (Call/Media)
-        if (audioManager.isMusicActive() ||
-                audioManager.getMode() == AudioManager.MODE_IN_CALL ||
-                audioManager.getMode() == AudioManager.MODE_IN_COMMUNICATION) {
+        if (audioManager.isMusicActive() || 
+            audioManager.getMode() == AudioManager.MODE_IN_CALL || 
+            audioManager.getMode() == AudioManager.MODE_IN_COMMUNICATION) {
             handler.postDelayed(() -> startListening(), 5000);
             return;
         }
