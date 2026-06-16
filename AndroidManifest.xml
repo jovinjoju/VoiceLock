@@ -8,7 +8,7 @@
         android:allowBackup="true"
         android:label="VoiceLock"
         android:icon="@mipmap/ic_launcher">
-
+        
         <activity
             android:name=".MainActivity"
             android:exported="true">
